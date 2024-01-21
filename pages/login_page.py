@@ -1,6 +1,7 @@
 from .base_page import BasePage
 from .locators import LoginPageLocators
 
+
 class LoginPage(BasePage):
     def should_be_login_page(self):
         self.should_be_login_link()
@@ -24,4 +25,3 @@ class LoginPage(BasePage):
         password_conf_input = self.browser.find_element(*LoginPageLocators.CONFIRM_PASSWORD)
         password_conf_input.send_keys(password)
         self.browser.find_element(*LoginPageLocators.REG_BTN).click()
-

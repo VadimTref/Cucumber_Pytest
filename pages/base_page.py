@@ -10,6 +10,9 @@ class BasePage():
     def open_page(self):
         self.browser.get(self.link)
 
+   # def find_element(self, *locator):
+        #return self.browser.find_element(*locator)
+
     def element_is_present(self, method, locator):
         try:
             self.browser.find_element(method, locator)

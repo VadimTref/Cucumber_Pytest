@@ -1,4 +1,4 @@
-name: Python_05_UI_testing
+name: Python_Cucumber
 
 on:
   push:
